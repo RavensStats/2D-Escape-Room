@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1bf80b05fc5fa7846bac899ed77a383f
+guid: cbbdaf91373b3024888d6303b4dc8bf8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5185496944813092519
-    second: BG_Placeholder_0
+      213: 7709164441924841530
+    second: Light_Puzzle_Button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_Placeholder_0
+      name: Light_Puzzle_Button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 750
-        height: 423
+        width: 75
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 951da8ca00a6908b0800000000000000
-      internalID: -5185496944813092519
+      spriteID: a30b00c07347cfa60800000000000000
+      internalID: 7709164441924841530
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BG_Placeholder_0: -5185496944813092519
+      Light_Puzzle_Button_0: 7709164441924841530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

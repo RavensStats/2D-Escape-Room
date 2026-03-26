@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1efdecb86a7abae4d8a92eedc2d25528
+guid: 3604cae8a0cff1842935aa3574e3bb6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4841720520028814253
-    second: Note_0
+      213: 2125968411373591302
+    second: Light_Puzzle_Panel_Cropped_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Note_0
+      name: Light_Puzzle_Panel_Cropped_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 598
+        height: 305
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35486fde6d0ceccb0800000000000000
-      internalID: -4841720520028814253
+      spriteID: 60bdf9b9105f08d10800000000000000
+      internalID: 2125968411373591302
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Note_0: -4841720520028814253
+      Light_Puzzle_Panel_Cropped_0: 2125968411373591302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
