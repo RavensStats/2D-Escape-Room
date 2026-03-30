@@ -35,9 +35,9 @@ public class SliderSnapMonitor : MonoBehaviour
 
         // Check for the specific combination
         bool match = sliders.Length >= 4 &&
-            sliders[0].GetCurrentSnapIndex() == 10 &&
-            sliders[1].GetCurrentSnapIndex() == 4 &&
-            sliders[2].GetCurrentSnapIndex() == 7 &&
+            sliders[0].GetCurrentSnapIndex() == 4 &&
+            sliders[1].GetCurrentSnapIndex() == 2 &&
+            sliders[2].GetCurrentSnapIndex() == 3 &&
             sliders[3].GetCurrentSnapIndex() == 1;
 
         if (match && !activated)
