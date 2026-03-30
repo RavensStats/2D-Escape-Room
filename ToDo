@@ -1,0 +1,21 @@
+- Bedroom
+  - Determine where we want items hidden
+  - Create assets
+  - Add assets for those items in the correct places
+  - Update collider to make correct objects active/inactive
+  - Create any custom logic for puzzles/interactions (like the light switch puzzle)
+  - Add a check that the room key is in inventory when interacting with the door collider, and if yes then open / progress to room 2
+- Create Inventory System
+  - UI Design
+  - Combine script when drag and drop 2 items together
+  - Message Box for success/failure of combine attempt
+  - Create inventory sprites for items in addition to world sprites(could use the same one if we want too)
+- 2nd room - nth room
+  - Create background image
+  - Identify collider zones
+  - Determine where we want items hidden
+  - Create assets
+  - Add assets for those items in the correct places
+  - Update collider to make correct objects active/inactive
+  - Create any custom logic for puzzles/interactions (like the light switch puzzle)
+- Integrate story elements either environmentally or explicitly
