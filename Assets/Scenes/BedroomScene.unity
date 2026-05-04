@@ -1863,7 +1863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8142421610710119483, guid: eb83e236ee7aac84c8c738cc4cf500b3, type: 3}
+  m_Sprite: {fileID: -3665159520875119807, guid: d1cca0048b605824f9eee5854da07ed0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2681,7 +2681,7 @@ GameObject:
   - component: {fileID: 1978729831}
   - component: {fileID: 1978729830}
   m_Layer: 5
-  m_Name: HIghlight
+  m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2716,7 +2716,7 @@ Animator:
   m_GameObject: {fileID: 1978729828}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 36b1c4ca30049be43bc04df60379a7b1, type: 2}
+  m_Controller: {fileID: 9100000, guid: a2d7f874a9a32f44ab7f9022b76c0430, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2748,7 +2748,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e34906771b320e04aa05f5f2db857617, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd9e76967c67d5649af0dcc1675acd49, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
