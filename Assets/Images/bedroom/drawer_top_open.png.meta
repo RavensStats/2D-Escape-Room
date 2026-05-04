@@ -119,50 +119,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: drawer_top_open_0
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 88
-        width: 42
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 784ee55e9f03f68d0800000000000000
-      internalID: -2851006189249043321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: drawer_top_open_1
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 88
-        width: 44
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5445958b331faf970800000000000000
-      internalID: 8789602827205432389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: drawer_top_open_2
       rect:
         serializedVersion: 2
@@ -171,7 +127,7 @@ TextureImporter:
         width: 496
         height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8f61f1c35da4c274d85d28849b100343
     internalID: 0
     vertices: []
     indices: 
