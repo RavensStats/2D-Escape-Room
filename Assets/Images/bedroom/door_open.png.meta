@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d1cca0048b605824f9eee5854da07ed0
+guid: 7d76557925a4dd04aba319df39615d43
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3665159520875119807
-    second: bedroom_background 1_0
+      213: 9087207327684497215
+    second: door_open_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bedroom_background 1_0
+      name: door_open_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 512
+        height: 786
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14bf819a5dcb22dc0800000000000000
-      internalID: -3665159520875119807
+      spriteID: f3f06fe1bee3c1e70800000000000000
+      internalID: 9087207327684497215
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bedroom_background 1_0: -3665159520875119807
+      door_open_0: 9087207327684497215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
