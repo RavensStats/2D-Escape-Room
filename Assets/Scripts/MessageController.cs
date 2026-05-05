@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class MessageController : MonoBehaviour
 {
     public GameObject messageBox;
     public TMP_Text messageText;
