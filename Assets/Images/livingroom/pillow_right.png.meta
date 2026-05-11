@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3d903837bb748c44eae29255a1f6f5ae
+guid: efd70e4370ee29e49aabc80849e66859
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1143692212453745536
-    second: overlay 1_0
+      213: 1742479436168234274
+    second: pillow_right_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: overlay 1_0
+      name: pillow_right_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 131
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 083afa7f1063fdf00800000000000000
-      internalID: 1143692212453745536
+      spriteID: 2250b3da0d78e2810800000000000000
+      internalID: 1742479436168234274
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      overlay 1_0: 1143692212453745536
+      pillow_right_0: 1742479436168234274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

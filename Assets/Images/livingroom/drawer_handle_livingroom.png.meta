@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3d903837bb748c44eae29255a1f6f5ae
+guid: 1734343528ca4f34782a73507e305b52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1143692212453745536
-    second: overlay 1_0
+      213: 1530819415659967579
+    second: drawer_handle_livingroom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: overlay 1_0
+      name: drawer_handle_livingroom_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 62
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 083afa7f1063fdf00800000000000000
-      internalID: 1143692212453745536
+      spriteID: b54feadd5209e3510800000000000000
+      internalID: 1530819415659967579
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      overlay 1_0: 1143692212453745536
+      drawer_handle_livingroom_0: 1530819415659967579
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

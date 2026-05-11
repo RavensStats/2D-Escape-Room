@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 3d903837bb748c44eae29255a1f6f5ae
+guid: 7f0a0853cb0d9c341a60a8583a3d4ab1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1143692212453745536
-    second: overlay 1_0
+      213: 8053485065312510298
+    second: doll_open_0
+  - first:
+      213: 3776307614615843283
+    second: doll_open_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: overlay 1_0
+      name: doll_open_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        y: 46
+        width: 256
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 083afa7f1063fdf00800000000000000
-      internalID: 1143692212453745536
+      spriteID: a51add96ff9b3cf60800000000000000
+      internalID: 8053485065312510298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doll_open_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 196
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1b7cb84c3286430800000000000000
+      internalID: 3776307614615843283
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      overlay 1_0: 1143692212453745536
+      doll_open_0: 8053485065312510298
+      doll_open_1: 3776307614615843283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
