@@ -1,27 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class InventoryBoxManager : MonoBehaviour
 {
-    public Image[] slots;
-
-    public bool AddItem(Sprite itemIcon, string itemID)
+    public void ChangeState(GameObject box)
     {
-        foreach (Image slot in slots)
-        {
-            if (!slot.enabled)
-            {
-                slot.sprite = itemIcon;
-                slot.enabled = true;
-                slot.SetNativeSize();
-
-                InventorySlot inventorySlot = slot.GetComponentInParent<InventorySlot>();
-                inventorySlot.itemID = itemID;
-
-                return true;
-            }
-        }
-
-        return false;
+        box.SetActive(!box.activeSelf);
+        return;
     }
 }

@@ -28,4 +28,8 @@ public class MoveObject : MonoBehaviour
             }
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 55dd02d (merge test)
