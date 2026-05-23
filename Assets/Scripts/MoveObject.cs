@@ -3,7 +3,7 @@ using UnityEngine;
 public class MoveObject : MonoBehaviour
 {
     public Transform targetPoint;
-    public float moveSpeed = 10f;
+    public float moveSpeed = 120f;
 
     private bool isMoving = false;
 
