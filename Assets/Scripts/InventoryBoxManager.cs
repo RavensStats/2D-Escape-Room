@@ -1,10 +1,26 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryBoxManager : MonoBehaviour
 {
-    public void ChangeState(GameObject box)
+    public Image[] slots;
+
+    public bool AddItem(Sprite itemIcon)
     {
-        box.SetActive(!box.activeSelf);
-        return;
+        foreach (Image slot in slots)
+        {
+            if (!slot.enabled)
+            {
+                slot.sprite = itemIcon;
+                slot.enabled = true;
+
+                slot.SetNativeSize();
+
+                return true;
+            }
+        }
+
+        Debug.Log("Inventory full");
+        return false;
     }
 }
