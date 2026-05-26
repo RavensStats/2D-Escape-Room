@@ -1477,9 +1477,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.06782177
+    y: 0
     width: 1
-    height: 0.86435646
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -4069,11 +4069,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1148635939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a91b7f014906400a92f16bbcfdc9005, type: 3}
+  m_Script: {fileID: 11500000, guid: d4ff7feb9a6544dc5bc5222078697aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveObject
   targetPoint: {fileID: 506610471}
-  moveSpeed: 5
+  moveSpeed: 7
 --- !u!114 &1148635943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6290,11 +6290,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1766055416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a91b7f014906400a92f16bbcfdc9005, type: 3}
+  m_Script: {fileID: 11500000, guid: d4ff7feb9a6544dc5bc5222078697aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveObject
   targetPoint: {fileID: 776458428}
-  moveSpeed: 5
+  moveSpeed: 7
 --- !u!114 &1766055420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7540,11 +7540,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2142549318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a91b7f014906400a92f16bbcfdc9005, type: 3}
+  m_Script: {fileID: 11500000, guid: d4ff7feb9a6544dc5bc5222078697aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveObject
   targetPoint: {fileID: 1072238052}
-  moveSpeed: 5
+  moveSpeed: 7
 --- !u!114 &2142549322
 MonoBehaviour:
   m_ObjectHideFlags: 0
