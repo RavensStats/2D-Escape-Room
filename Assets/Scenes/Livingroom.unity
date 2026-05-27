@@ -1220,7 +1220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveObject
   targetPoint: {fileID: 793508208}
-  moveSpeed: 120
+  moveSpeed: 10
 --- !u!1 &445983990
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,7 +3061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveObject
   targetPoint: {fileID: 1255020150}
-  moveSpeed: 120
+  moveSpeed: 10
 --- !u!1 &817097853
 GameObject:
   m_ObjectHideFlags: 0
@@ -7488,9 +7488,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0028024912
+    x: 0
     y: 0
-    width: 0.994395
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
