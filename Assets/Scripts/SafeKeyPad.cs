@@ -6,6 +6,7 @@ public class SafeKeypad : MonoBehaviour
     public GameObject openSafe;
     public GameObject showDrawerHandle;
     private string currentCode = "";
+    public TMP_Text showCode;
 
     // The correct safe code
     public string correctCode = "1111";
@@ -14,12 +15,14 @@ public class SafeKeypad : MonoBehaviour
     public void AddDigit(string digit)
     {
         currentCode += digit;
+        showCode.text = currentCode;
     }
 
     // Called by the Clear button
     public void ClearCode()
     {
         currentCode = "";
+        showCode.text = currentCode;
     }
 
     // Called by the # button
@@ -31,6 +34,7 @@ public class SafeKeypad : MonoBehaviour
 
             openSafe.SetActive(true);
             showDrawerHandle.SetActive(true);
+            showCode.text = "";
         }
         else
         {
