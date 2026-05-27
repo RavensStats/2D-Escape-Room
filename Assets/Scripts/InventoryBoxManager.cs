@@ -13,7 +13,13 @@ public class InventoryBoxManager : MonoBehaviour
             {
                 slot.sprite = itemIcon;
                 slot.enabled = true;
-                slot.SetNativeSize();
+
+                slot.preserveAspect = true;
+
+                RectTransform slotRect = slot.GetComponent<RectTransform>();
+                RectTransform parentRect = slot.transform.parent.GetComponent<RectTransform>();
+
+                slotRect.sizeDelta = parentRect.rect.size;
 
                 InventorySlot inventorySlot = slot.GetComponentInParent<InventorySlot>();
                 inventorySlot.itemID = itemID;
