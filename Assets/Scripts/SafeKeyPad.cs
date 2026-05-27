@@ -34,7 +34,6 @@ public class SafeKeypad : MonoBehaviour
 
             openSafe.SetActive(true);
             showDrawerHandle.SetActive(true);
-            showCode.text = "";
         }
         else
         {
@@ -42,6 +41,7 @@ public class SafeKeypad : MonoBehaviour
         }
 
         currentCode = "";
+        showCode.text = currentCode;
     }
 
 }
