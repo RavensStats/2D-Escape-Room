@@ -15,8 +15,8 @@ public class CoffeeTableKeyPad : MonoBehaviour
     public TMP_Text[] leftButtons;
     public TMP_Text[] rightButtons;
 
-    public string correctCode1 = "11111";
-    public string correctCode2 = "22222";
+    public string correctCode1 = "24315";
+    public string correctCode2 = "42189";
 
     void UpdateCode(string side, int index)
     {

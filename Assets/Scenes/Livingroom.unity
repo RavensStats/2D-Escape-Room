@@ -10866,8 +10866,8 @@ MonoBehaviour:
   - {fileID: 257043952}
   - {fileID: 768754473}
   - {fileID: 910805172}
-  correctCode1: 11111
-  correctCode2: 22222
+  correctCode1: 24315
+  correctCode2: 42189
 --- !u!4 &2036938240
 Transform:
   m_ObjectHideFlags: 0

@@ -9,13 +9,16 @@ public class SafeKeypad : MonoBehaviour
     public TMP_Text showCode;
 
     // The correct safe code
-    public string correctCode = "1111";
+    public string correctCode = "300483";
 
     // Called when number buttons are pressed
     public void AddDigit(string digit)
     {
-        currentCode += digit;
-        showCode.text = currentCode;
+        if (showCode.text.Length < 6)
+        {
+            currentCode += digit;
+            showCode.text = currentCode;
+        }
     }
 
     // Called by the Clear button
