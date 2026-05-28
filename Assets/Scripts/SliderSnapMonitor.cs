@@ -4,6 +4,9 @@ public class SliderSnapMonitor : MonoBehaviour
 {
     public UISliderSnap[] sliders; // Assign all UISliderSnap components in the Inspector
     public GameObject[] objectsToActivate; // Assign 4 GameObjects to activate
+    public GameObject BedroomPanel;
+    public GameObject SliderPanel;
+    public GameObject DoorOpen;
     private int[] lastSnapIndices;
     private bool activated = false;
 
@@ -35,13 +38,14 @@ public class SliderSnapMonitor : MonoBehaviour
 
         // Check for the specific combination
         bool match = sliders.Length >= 4 &&
-            sliders[0].GetCurrentSnapIndex() == 4 &&
-            sliders[1].GetCurrentSnapIndex() == 2 &&
+            sliders[0].GetCurrentSnapIndex() == 0 &&
+            sliders[1].GetCurrentSnapIndex() == 1 &&
             sliders[2].GetCurrentSnapIndex() == 3 &&
-            sliders[3].GetCurrentSnapIndex() == 1;
+            sliders[3].GetCurrentSnapIndex() == 2;
 
         if (match && !activated)
         {
+            Debug.Log("Sliders Correct");
             foreach (var obj in objectsToActivate)
             {
                 if (obj != null)
@@ -51,6 +55,10 @@ public class SliderSnapMonitor : MonoBehaviour
                 }
             }
             activated = true;
+            DoorOpen.SetActive(true);
+            BedroomPanel.SetActive(true);
+            SliderPanel.SetActive(false);
+            
         }
         else if (!match && activated)
         {
