@@ -26,7 +26,7 @@ public class DrawerUI : MonoBehaviour
         }
         else
         {
-            //messageController.ShowMessage("The drawer is locked");
+            messageController.ShowMessage("The drawer is locked.");
         }
     }
 
