@@ -11,6 +11,8 @@ public class CoffeeTableKeyPad : MonoBehaviour
     public GameObject closedDrawer;
     public GameObject leftButton;
     public GameObject rightButton;
+    public MessageController messageControllerRight;
+    public MessageController messageControllerLeft;
 
     public TMP_Text[] leftButtons;
     public TMP_Text[] rightButtons;
@@ -37,7 +39,7 @@ public class CoffeeTableKeyPad : MonoBehaviour
 
         targetText.text = number.ToString();
 
-        CheckCodes();
+        CheckCodes(side);
     }
 
     // LEFT BUTTONS
@@ -54,7 +56,7 @@ public class CoffeeTableKeyPad : MonoBehaviour
     public void Right3() { UpdateCode("right", 3); }
     public void Right4() { UpdateCode("right", 4); }
 
-    void CheckCodes()
+    void CheckCodes(string side)
     {
         string leftCode = "";
         string rightCode = "";
@@ -74,11 +76,18 @@ public class CoffeeTableKeyPad : MonoBehaviour
             rightCode == correctCode1))
         {
             Debug.Log("Drawer Opened!");
+            if (side == "right") {
+                messageControllerRight.ShowMessage("You hear a click.");
+            }
+            if (side == "left")
+            {
+                messageControllerLeft.ShowMessage("You hear a click.");
+            }
 
-            //Change panels:
-            coffeeTableLeftPanel.SetActive(false);
-            coffeeTableRightPanel.SetActive(false);
-            livingRoomPanel.SetActive(true);
+            // //Change panels:
+            // coffeeTableLeftPanel.SetActive(false);
+            // coffeeTableRightPanel.SetActive(false);
+            // livingRoomPanel.SetActive(true);
 
             //open Drawer, disable closed drawer, show key
             openDrawer.SetActive(true);
@@ -86,7 +95,29 @@ public class CoffeeTableKeyPad : MonoBehaviour
             rightButton.SetActive(false);
             closedDrawer.SetActive(false);
             showKey.SetActive(true);
-
         }
+        if ((leftCode == correctCode1 &&
+            rightCode != correctCode2 &&
+            side == "left") ||
+            (leftCode == correctCode2 &&
+            rightCode != correctCode1 &&
+            side == "left") ||
+            (leftCode != correctCode1 &&
+            rightCode == correctCode2 &&
+            side == "right") ||
+            (leftCode != correctCode2 &&
+            rightCode == correctCode1 &&
+            side == "right")
+            )
+        {
+            if (side == "right") {
+                Debug.Log("RIGHT message fired");
+                messageControllerRight.ShowMessage("You hear a click.");
+            }
+            if (side == "left")
+            {
+                messageControllerLeft.ShowMessage("You hear a click.");
+            }        }
+        
     }
 }
