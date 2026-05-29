@@ -7,7 +7,7 @@ public class InventorySelectionManager : MonoBehaviour
     private InventorySlot selectedKeyPart2;
     public GameObject combineButton;
     public Sprite wholeKeyIcon;
-    public GameObject bigPhoto;
+    public GameObject photoZoomIn;
     public void SelectSlot(InventorySlot slot)
     {
         // Clicking selected normal item again unselects it
@@ -16,12 +16,13 @@ public class InventorySelectionManager : MonoBehaviour
             selectedSlot.SetSelected(false);
             selectedSlot = null;
             combineButton.SetActive(false);
+            photoZoomIn.SetActive(false);
             return;
         }
 
         if (slot.itemID == "couch_photo")
         {
-            bigPhoto.SetActive(true);
+            photoZoomIn.SetActive(true);
         }
 
         // Key parts special case

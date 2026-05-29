@@ -6,4 +6,8 @@ public class PhotoUI : MonoBehaviour
     {
         photoPanel.SetActive(false);
     }
+    public void OpenPhotoPanel()
+    {
+        photoPanel.SetActive(true);
+    }
 }

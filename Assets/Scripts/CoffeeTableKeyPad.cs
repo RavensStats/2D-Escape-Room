@@ -111,7 +111,6 @@ public class CoffeeTableKeyPad : MonoBehaviour
             )
         {
             if (side == "right") {
-                Debug.Log("RIGHT message fired");
                 messageControllerRight.ShowMessage("You hear a click.");
             }
             if (side == "left")
