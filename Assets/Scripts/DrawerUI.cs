@@ -24,10 +24,10 @@ public class DrawerUI : MonoBehaviour
             inventorySelectionManager.GetSelectedSlot().ClearSlot();
 
         }
-        else
+        if (!drawerHandle.activeSelf)
         {
             messageController.ShowMessage("The drawer is locked.");
-        }
+        } 
     }
 
     

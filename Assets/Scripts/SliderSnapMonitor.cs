@@ -9,6 +9,8 @@ public class SliderSnapMonitor : MonoBehaviour
     public GameObject DoorOpen;
     private int[] lastSnapIndices;
     private bool activated = false;
+    public MessageController messageController;
+    private bool DoorOpened;
 
     void Start()
     {
@@ -22,55 +24,58 @@ public class SliderSnapMonitor : MonoBehaviour
         {
             lastSnapIndices[i] = sliders[i].GetCurrentSnapIndex();
         }
+        DoorOpened = false;
     }
 
     void Update()
     {
-        for (int i = 0; i < sliders.Length; i++)
-        {
-            int currentIndex = sliders[i].GetCurrentSnapIndex();
-            if (currentIndex != lastSnapIndices[i])
+        if (!DoorOpened) {
+            for (int i = 0; i < sliders.Length; i++)
             {
-                Debug.Log($"Slider {i + 1} snap index changed: {lastSnapIndices[i]} -> {currentIndex}");
-                lastSnapIndices[i] = currentIndex;
-            }
-        }
-
-        // Check for the specific combination
-        bool match = sliders.Length >= 4 &&
-            sliders[0].GetCurrentSnapIndex() == 0 &&
-            sliders[1].GetCurrentSnapIndex() == 1 &&
-            sliders[2].GetCurrentSnapIndex() == 3 &&
-            sliders[3].GetCurrentSnapIndex() == 2;
-
-        if (match && !activated)
-        {
-            Debug.Log("Sliders Correct");
-            foreach (var obj in objectsToActivate)
-            {
-                if (obj != null)
+                int currentIndex = sliders[i].GetCurrentSnapIndex();
+                if (currentIndex != lastSnapIndices[i])
                 {
-                    obj.SetActive(true);
-                    Debug.Log($"Activated: {obj.name}");
+                    Debug.Log($"Slider {i + 1} snap index changed: {lastSnapIndices[i]} -> {currentIndex}");
+                    lastSnapIndices[i] = currentIndex;
                 }
             }
-            activated = true;
-            DoorOpen.SetActive(true);
-            BedroomPanel.SetActive(true);
-            SliderPanel.SetActive(false);
-            
-        }
-        else if (!match && activated)
-        {
-            foreach (var obj in objectsToActivate)
+
+            // Check for the specific combination
+            bool match = sliders.Length >= 4 &&
+                sliders[0].GetCurrentSnapIndex() == 0 &&
+                sliders[1].GetCurrentSnapIndex() == 1 &&
+                sliders[2].GetCurrentSnapIndex() == 3 &&
+                sliders[3].GetCurrentSnapIndex() == 2;
+
+            if (match && !activated)
             {
-                if (obj != null)
+                Debug.Log("Sliders Correct");
+                foreach (var obj in objectsToActivate)
                 {
-                    obj.SetActive(false);
-                    Debug.Log($"Deactivated: {obj.name}");
+                    if (obj != null)
+                    {
+                        obj.SetActive(true);
+                        Debug.Log($"Activated: {obj.name}");
+                    }
                 }
+                activated = true;
+                DoorOpened = true;
+                DoorOpen.SetActive(true);
+                messageController.ShowMessage("You hear a click.");
+                
             }
-            activated = false;
+            else if (!match && activated)
+            {
+                foreach (var obj in objectsToActivate)
+                {
+                    if (obj != null)
+                    {
+                        obj.SetActive(false);
+                        Debug.Log($"Deactivated: {obj.name}");
+                    }
+                }
+                activated = false;
+            }
         }
     }
 }
