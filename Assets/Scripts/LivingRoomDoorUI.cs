@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LivingRoomDoorUI: MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class LivingRoomDoorUI: MonoBehaviour
     {
         if (door.activeSelf == true)    //door is already open, go through
             {
-                //Switch scene or whatever 
+                SceneManager.LoadScene("EndingScene");
             }
         else
         {

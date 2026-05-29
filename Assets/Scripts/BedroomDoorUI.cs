@@ -1,19 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BedroomDoorUI : MonoBehaviour
 {
-    public GameObject door;
-    public MessageController messageController;
-
-    public void OpenDoor()
+    public void ExitRoom()
     {
-        if (door.activeSelf == true)
-        {
-            //go through door
-        }
-        else
-        {
-            messageController.ShowMessage("The door is locked.");
-        }
+
+        Debug.Log("Exiting");
+        SceneManager.LoadScene("LivingroomScene");
     }
 }
