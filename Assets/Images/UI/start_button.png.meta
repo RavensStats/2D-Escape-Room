@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ee129a8e61f2ee42a40b0a577cf0f8a
+guid: b469f96f1fee68647a816721b561e3f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6538815248466333499
-    second: livingroom_background 1_0
+      213: -3500759553075992606
+    second: start_button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: livingroom_background 1_0
+      name: start_button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 940
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c0b147fc267145a0800000000000000
-      internalID: -6538815248466333499
+      spriteID: 2e7a9dafbbdca6fc0800000000000000
+      internalID: -3500759553075992606
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      livingroom_background 1_0: -6538815248466333499
+      start_button_0: -3500759553075992606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1621370031122697630, guid: 7853562fc68691d42a75557edbe26563, type: 3}
+  m_Sprite: {fileID: 1285457495098548250, guid: 496b7e8f60f78e04cb26455723ebe097, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11131,9 +11131,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.024244428
     y: 0
-    width: 1
+    width: 0.95151114
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -11285,7 +11285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6401257486965317488, guid: d717febef1ec7be409c902aa19bdf240, type: 3}
+  m_Sprite: {fileID: 4560941488957673768, guid: 8bd5ad82083f1e140b6c4a227cd0389f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12699,7 +12699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8739627651495417678, guid: b11942f0ad8d27f42a06e5fe8499a9c8, type: 3}
+  m_Sprite: {fileID: -6538815248466333499, guid: 4ee129a8e61f2ee42a40b0a577cf0f8a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

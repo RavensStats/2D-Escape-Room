@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d717febef1ec7be409c902aa19bdf240
+guid: 8bd5ad82083f1e140b6c4a227cd0389f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6401257486965317488
-    second: coffee_table_lock_left_0
+      213: 4560941488957673768
+    second: coffee_table_lock_left 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coffee_table_lock_left_0
+      name: coffee_table_lock_left 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0906f9d1b3a2a27a0800000000000000
-      internalID: -6401257486965317488
+      spriteID: 821d9aa8e18bb4f30800000000000000
+      internalID: 4560941488957673768
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coffee_table_lock_left_0: -6401257486965317488
+      coffee_table_lock_left 1_0: 4560941488957673768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
