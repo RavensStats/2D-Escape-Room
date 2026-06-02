@@ -7,6 +7,7 @@ public class SliderSnapMonitor : MonoBehaviour
     public GameObject BedroomPanel;
     public GameObject SliderPanel;
     public GameObject DoorOpen;
+    public AudioClip doorOpenSound;
     private int[] lastSnapIndices;
     private bool activated = false;
     public MessageController messageController;
@@ -61,6 +62,7 @@ public class SliderSnapMonitor : MonoBehaviour
                 activated = true;
                 DoorOpened = true;
                 DoorOpen.SetActive(true);
+                SoundManager.Instance.PlaySound(doorOpenSound);
                 messageController.ShowMessage("You hear a click.");
                 
             }

@@ -7,6 +7,7 @@ public class LockedDrawer : MonoBehaviour
     public GameObject closedDrawer;
     public GameObject openedDrawer;
     public GameObject topDrawerButton;
+    public AudioClip unlockAudio;
 
     public MessageController messageController;
 
@@ -14,6 +15,7 @@ public class LockedDrawer : MonoBehaviour
     {
         if (inventorySelectionManager.GetSelectedItemID() == "WholeKey")
         {
+            SoundManager.Instance.PlaySound(unlockAudio);
             InventorySlot usedSlot =
                 inventorySelectionManager.GetSelectedSlot();
 
