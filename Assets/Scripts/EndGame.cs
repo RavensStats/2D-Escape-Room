@@ -12,7 +12,7 @@ public class EndingSequence : MonoBehaviour
     }
 
     IEnumerator EndGame() { 
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(30f);
 #if UNITY_EDITOR
     UnityEditor.EditorApplication.isPlaying = false;
 #else

@@ -2796,9 +2796,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.02565658
     y: 0
-    width: 1
+    width: 0.94868684
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -5810,7 +5810,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 976378312}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2052731685}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2052731686}
+        m_TargetAssemblyTypeName: MessageController, Assembly-CSharp
+        m_MethodName: ShowMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dear Friend, you have died. Escape the house to identify
+            the killer.
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &976378312
 MonoBehaviour:
   m_ObjectHideFlags: 0
