@@ -6,10 +6,17 @@ public class PaintingUI : MonoBehaviour
     public GameObject paintingOpen;
     public GameObject safeSmall;
 
-    public void PaintingSafe()
+    public void OpenPainting()
     {
         paintingClosed.SetActive(false);
         paintingOpen.SetActive(true);
         safeSmall.SetActive(true);
+    }
+    
+    public void ClosePainting()
+    {
+        paintingClosed.SetActive(true);
+        paintingOpen.SetActive(false);
+        safeSmall.SetActive(false);
     }
 }

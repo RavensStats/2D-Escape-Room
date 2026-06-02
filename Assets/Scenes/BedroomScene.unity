@@ -2796,10 +2796,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.02565658
-    y: 0
-    width: 0.94868684
-    height: 1
+    x: 0
+    y: 0.031592786
+    width: 1
+    height: 0.9368144
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -6000,7 +6000,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: A painting of a farmer with a goat.
+          m_StringArgument: A painting of a farmer with a cow.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1047929240
@@ -7005,7 +7005,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6772405258407632183, guid: 52dfffdf5409af544bedd82e87c68999, type: 3}
+  m_Sprite: {fileID: 2779671130121693635, guid: de4742835607838428e2fd3877c91c44, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9322,7 +9322,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6772405258407632183, guid: 52dfffdf5409af544bedd82e87c68999, type: 3}
+  m_Sprite: {fileID: 6853642686873726735, guid: b4b9b9e3308b2b341ac6a0e7f45ada94, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10618,7 +10618,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6772405258407632183, guid: 52dfffdf5409af544bedd82e87c68999, type: 3}
+  m_Sprite: {fileID: -6924320141188070186, guid: 3486d5dd611f8c44f9682362cef1dd59, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10784,7 +10784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1886066334
 RectTransform:
   m_ObjectHideFlags: 0
