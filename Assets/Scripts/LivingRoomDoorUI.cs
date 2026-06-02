@@ -6,6 +6,7 @@ public class LivingRoomDoorUI: MonoBehaviour
     public GameObject door;
     public InventorySelectionManager inventorySelectionManager;
     public MessageController messageController;
+    public AudioClip unlockAudio;
 
     public void OpenDoor()
     {
@@ -17,6 +18,7 @@ public class LivingRoomDoorUI: MonoBehaviour
         {
             if (inventorySelectionManager.GetSelectedItemID() == "key") //open door if key selected
             {
+                SoundManager.Instance.PlaySound(unlockAudio);
                 door.SetActive(true);
                 inventorySelectionManager.GetSelectedSlot().ClearSlot();
             }

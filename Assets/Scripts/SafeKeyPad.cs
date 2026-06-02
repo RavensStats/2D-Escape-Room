@@ -7,6 +7,9 @@ public class SafeKeypad : MonoBehaviour
     public GameObject showDrawerHandle;
     private string currentCode = "";
     public TMP_Text showCode;
+    public AudioClip beep;
+    public AudioClip doubleBeep;
+    public AudioClip openSafeNoise;
 
     // The correct safe code
     public string correctCode = "300483";
@@ -14,6 +17,7 @@ public class SafeKeypad : MonoBehaviour
     // Called when number buttons are pressed
     public void AddDigit(string digit)
     {
+        SoundManager.Instance.PlaySound(beep);
         if (showCode.text.Length < 6)
         {
             currentCode += digit;
@@ -24,6 +28,7 @@ public class SafeKeypad : MonoBehaviour
     // Called by the Clear button
     public void ClearCode()
     {
+        SoundManager.Instance.PlaySound(beep);
         currentCode = "";
         showCode.text = currentCode;
     }
@@ -33,6 +38,7 @@ public class SafeKeypad : MonoBehaviour
     {
         if (currentCode == correctCode)
         {
+            SoundManager.Instance.PlaySound(openSafeNoise);
             Debug.Log("SAFE OPENED!");
 
             openSafe.SetActive(true);
@@ -41,6 +47,7 @@ public class SafeKeypad : MonoBehaviour
         else
         {
             Debug.Log("WRONG CODE");
+            SoundManager.Instance.PlaySound(doubleBeep);
         }
 
         currentCode = "";

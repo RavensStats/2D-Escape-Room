@@ -10,11 +10,15 @@ public class DrawerUI : MonoBehaviour
     public GameObject dollClosed;
     public GameObject dollOpenHead;
     public GameObject dollOpenBody;
+    public AudioClip drawerNoise;
+    public AudioClip drawerLockedNoise;
+    public AudioClip drawerHandleNoise;
 
     public void MakeDrawerBig()
     {
         if (drawerHandle.activeSelf)
         {
+            SoundManager.Instance.PlaySound(drawerNoise);
             drawerPanel.SetActive(true);
             livingRoomPanel.SetActive(false);
         }
@@ -22,11 +26,13 @@ public class DrawerUI : MonoBehaviour
         {
             drawerHandle.SetActive(true);
             inventorySelectionManager.GetSelectedSlot().ClearSlot();
+            SoundManager.Instance.PlaySound(drawerHandleNoise);
 
         }
         if (!drawerHandle.activeSelf)
         {
             messageController.ShowMessage("The drawer is locked.");
+            SoundManager.Instance.PlaySound(drawerLockedNoise);
         } 
     }
 

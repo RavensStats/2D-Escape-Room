@@ -13,6 +13,9 @@ public class CoffeeTableKeyPad : MonoBehaviour
     public GameObject rightButton;
     public MessageController messageControllerRight;
     public MessageController messageControllerLeft;
+    public AudioClip clickSound;
+    public AudioClip openDrawerSound;
+    public AudioClip unlockSound;
 
     public TMP_Text[] leftButtons;
     public TMP_Text[] rightButtons;
@@ -22,6 +25,7 @@ public class CoffeeTableKeyPad : MonoBehaviour
 
     void UpdateCode(string side, int index)
     {
+        SoundManager.Instance.PlaySound(clickSound);
         TMP_Text targetText;
 
         if (side == "left")
@@ -70,11 +74,10 @@ public class CoffeeTableKeyPad : MonoBehaviour
         {
             rightCode += t.text;
         }
-        if ((leftCode == correctCode1 &&
-            rightCode == correctCode2) ||
-            (leftCode == correctCode2 &&
-            rightCode == correctCode1))
+        if (leftCode == correctCode1 &&
+            rightCode == correctCode2)
         {
+            SoundManager.Instance.PlaySound(unlockSound);
             Debug.Log("Drawer Opened!");
             if (side == "right") {
                 messageControllerRight.ShowMessage("You hear a click.");
@@ -83,33 +86,24 @@ public class CoffeeTableKeyPad : MonoBehaviour
             {
                 messageControllerLeft.ShowMessage("You hear a click.");
             }
-
-            // //Change panels:
-            // coffeeTableLeftPanel.SetActive(false);
-            // coffeeTableRightPanel.SetActive(false);
-            // livingRoomPanel.SetActive(true);
-
             //open Drawer, disable closed drawer, show key
             openDrawer.SetActive(true);
             leftButton.SetActive(false);
             rightButton.SetActive(false);
             closedDrawer.SetActive(false);
             showKey.SetActive(true);
-        }
-        if ((leftCode == correctCode1 &&
+            SoundManager.Instance.PlaySound(openDrawerSound);
+        } else
+        {
+            if ((leftCode == correctCode1 &&
             rightCode != correctCode2 &&
-            side == "left") ||
-            (leftCode == correctCode2 &&
-            rightCode != correctCode1 &&
             side == "left") ||
             (leftCode != correctCode1 &&
             rightCode == correctCode2 &&
-            side == "right") ||
-            (leftCode != correctCode2 &&
-            rightCode == correctCode1 &&
             side == "right")
             )
         {
+            SoundManager.Instance.PlaySound(unlockSound);
             if (side == "right") {
                 messageControllerRight.ShowMessage("You hear a click.");
             }
@@ -119,4 +113,6 @@ public class CoffeeTableKeyPad : MonoBehaviour
             }        }
         
     }
+        }
+        
 }
